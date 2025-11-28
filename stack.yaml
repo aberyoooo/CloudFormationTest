@@ -1,3 +1,12 @@
 template-file-path: template.yaml
-parameters: {}
+parameters:
+  TaskRoleArn: arn:aws:iam::211125408632:role/ECS_Exec
+  VpcId: vpc-0a494c7ecb2de220d
+  TaskExecutionRoleArn: arn:aws:iam::211125408632:role/ecsTaskExecutionRole
+  ServiceName: PublicFargate
+  ContainerImage: 211125408632.dkr.ecr.ap-northeast-1.amazonaws.com/aberyo:nginx-public
+  ClusterName: PublicFargate
+  SubnetId: subnet-0ffdd84b091b236f1
+  LogGroupName: PublicFargate
+  DefaultSecurityGroup: sg-0b29bde6cdfe9c6b6
 tags: {}
